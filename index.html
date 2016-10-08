@@ -1,0 +1,283 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>M O N A</title>
+<link type="text/css" rel="stylesheet" href="css/estilos.css" media="screen"/>
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link href="favicon.png" rel='shortcut icon' type='image/x-icon'/>
+<link href="favicon.png" rel='icon' type='image/x-icon'/>
+
+<script type="text/javascript"src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.innerfade.js"></script>
+<script type="text/javascript">
+	   $(document).ready(
+				function(){
+					$('ul#galeria').innerfade({
+						speed: 2500,
+						timeout: 4500,
+						type: 'sequence',
+						containerheight: '470px'
+					});
+
+			});
+</script>
+
+<script type="text/javascript">
+$(document).ready(main);
+var contador = 1;
+function main () {
+	$('.menu_bar').click(function(){
+		if (contador == 1) {
+			$('nav').animate({
+				left: '0'
+			});
+			contador = 0;
+		} else {
+			contador = 1;
+			$('nav').animate({
+				left: '-100%'
+			});
+		}
+	});
+ 
+	// Mostramos y ocultamos submenus
+	$('.submenu').click(function(){
+		$(this).children('.children').slideToggle();
+	});
+}
+</script>
+
+</head>
+<body>
+	  <!-- Encabezado -->
+<div id="cabecera">
+<nav id="menu">
+	<ul>
+		<li><a href="#"></a>
+			<ul>
+				<li><img src="img/flecha.png" style="border:none"/><a href="#">BLOGGER</a></li>
+
+					<li><a class="hijo" href="#">UNATALLUISA</a></li>
+					<li><a class="hijo" href="#">CHEKY CHINESE</a></li>
+					<li><a class="hijo" href="#">SANDRA NIETO</a></li>
+
+				<li><img src="img/flecha.png" style="border:none"/><a href="#">TENDENCIAS</a></li>
+
+					<li><a class="hijo" href="#">STREET STYLE</a></li>
+					<li><a class="hijo" href="#">CAZADORAS</a></li>
+					<li><a class="hijo" href="#">WAPISHANA</a></li>
+
+				<li><img src="img/flecha.png" style="border:none"/><a href="#">TIPS</a></li>
+
+					<li><a class="hijo" href="#">CONTOURING</a></li>
+					<li><a class="hijo" href="#">DIETA DE SANDÍA</a></li>
+					<li><a class="hijo" href="#">LOS 10 BÁSICOS</a></li>
+
+				<li><img src="img/flecha.png" style="border:none"/><a href="#">PERSONAJES</a></li>
+
+					<li><a class="hijo" href="personaje.html">FELILUSTRA</a></li>
+					<li><a class="hijo" href="#">ELOISA ACOSTA</a></li>
+					<li><a class="hijo" href="#">DANIELA PANARO</a></li>
+
+				<li><a class="no-p" href="#">LOGIN</a></li>
+				<li><a class="no-p" href="#">REGÍSTRATE</a></li>
+				<li><a class="no-p" href="#">NEWSLETTER</a></li>
+				<li><a class="no-p" href="#">NOSOTROS</a></li>
+				<li><a class="no-p" href="#">COPYRIGHT</a></li>
+				<li><a class="no-p" href="#">AVISO LEGAL</a></li>
+			</ul>
+		</li>
+	</ul>
+</nav>
+
+	<div id="logo">
+  	<a href="#" title="MONA">
+    	<img src="img/logo.png" style="border:none"/>
+    </a> 
+  </div>
+</div>
+
+  <!-- Contenido -->
+<div id="pagina">
+
+  <div id="post-1" class="cont"> 
+    
+  	<img src="img/sandra-pargas.png" style="margin:0 0 25px 55px;border:none"/>
+
+  		<video id="video-pargas" width="720" controls>
+  			<source src="video/sandra.mp4" type="video/mp4">
+		</video>
+
+	<p>Hola chicas!! Acá les dejo algunos spots de la nueva produción de una diseñadora de moda venezolana que esta dando de que hablar. Diseños con acabados muy sobrios,  apostando una vez más al color black, la geometría y los colores sólidos.<a style="font-family: 'SmallTownSkyline', sans-serif;font-size:22px;color:#dc0eee">TALENTO VENEZOLANO</a></p>
+
+	<i class="der">Vzla <span style="color:#ebc7c8">|</span> By Mona <span style="color:#ebc7c8">|</span> Mar 2016</i></br></br>
+	<a class="boton-share der" href="#"><i class="fa fa-share-alt fa-lg"></i></a>
+
+  </div>
+
+<div id="post-2" class="cont"> 
+    
+  	<img src="img/post-2.png" width="682" height="940" style="border:none"/>
+
+	<p>Ha llegado el viernes, el mejor día de la semana!! y sabemos que muchas les encanta llevar con frescura su outfit; que tal si para este Viernes se animan con un vestidito fresco y unas sport que también te harán ver Chic y femenina, aparte es una tendencia que es cada vez más top. Animense y etiquetanos en instagram compartiendo su outfit con nosotras.</p>
+	
+	<i class="der">Vzla <span style="color:#ebc7c8">|</span> By Mona <span style="color:#ebc7c8">|</span> Enero 2016</i></br>
+
+ </div>
+
+ <div id="post-3" class="cont"> 
+    
+  	<img src="img/post-3.png" width="553" height="384" style="border:none"/></br></br>
+	<i class="der">Vzla <span style="color:#ebc7c8">|</span> By Mona <span style="color:#ebc7c8">|</span> Enero 2016</i></br>
+
+ </div>
+
+<div id="comentario" class="cont"> 
+    <p style="font-family: Century Gothic, Helvetica, sans-serif;font-size:14px">0 comentarios</p>
+  	<img src="img/coment1.jpg" width="45" height="62" style="border:none;"> <span style="font-family: Century Gothic, Helvetica, sans-serif;font-size:14px;letter-spacing:4.8pt;color:#5b5959;">añade comentario...</span></img>
+
+	<form>
+		<textarea name="message" rows="1" cols="90">
+		</textarea>
+		<br>
+	</form>
+	<a href="#"><i class="fa fa-share-alt fa-lg"></i></a>
+	<a style="font-family: Century Gothic, Helvetica, sans-serif;font-size:14px;right: 7px;
+letter-spacing: 2.8pt;
+color: rgb(0, 0, 0);
+position: absolute;cursor:pointer;">Publicar</a>
+
+  </div>
+
+  <!-- Barra lateral -->
+
+<div id="suscribete">
+<a href="#" onclick="$('#emergente').css('display','block');">SUSCRÍBETE</a>
+</div>
+
+<div  id="emergente">
+	
+<a id="cerrar" href="#" onclick="$('#emergente').css('display','none');"><i class="fa fa-times fa-lg"></i></a>
+	<h2>SUSCRÍBETE</h2>
+
+<form id="form1" name="form1" method="post" style="text-align:left; letter-spacing:-1pt">
+<table width="520" border="0">
+  <tr>
+    <td><label for="nombre">Nombre</label><a></br>  
+      <input name="nombre" style="padding: 12px 15px;border: solid 1px #e23e8c;" type="text" id="nombre" size="28" />            
+      </td>
+    <td></a><label for="email">Apellido</label></br><input name="email" style="padding: 12px 15px;border: solid 1px #e23e8c;" type="text" id="email" size="28" /></td>
+  </tr>
+  <tr>
+    <td colspan="2"><label for="asunto">Correo electrónico</label>
+      </br>
+      <input name="asunto" style="padding: 12px 15px;border: solid 1px #e23e8c;" type="text" id="asunto" size="65" /></td>
+  </tr>
+  <tr>
+    <td colspan="2"><label for="asunto">Contraseña</label>
+      </br>
+      <input name="asunto" style="padding: 12px 15px;border: solid 1px #e23e8c;" type="text" id="asunto" size="65" /></td>
+  </tr>
+  <tr>
+    <td colspan="2"><label for="asunto">Repetir contraseña</label>
+      </br>
+      <input name="asunto" style="padding: 12px 15px;border: solid 1px #e23e8c;" type="text" id="asunto" size="65" /></td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center"><input style="padding: 12px 15px;background:#86003a;color:#fff;border:none;margin:0 auto;font-family: Century Gothic, Helvetica, sans-serif;font-size: 18px;
+right: 7px;
+letter-spacing: 2.8pt;
+opacity: 1;
+cursor: pointer;" type="submit" name="enviar" id="enviar" class="botonform" value="REGISTRARSE" /></td>
+  </tr>
+</table>
+  </form>
+</div>
+
+
+
+
+
+<div id="search">
+
+	<input type="checkbox" id="toggle">
+<label for="toggle"><i class="fa fa-search fa-lg" style="position: absolute;
+right: 10px;"></i></label>
+	<span class="to-be-changed"><input type="text" size="13"></span>
+</div>
+
+<div id="rrss">
+	<i class="fa fa-instagram" style="position: absolute;
+	left:0px;"></i>
+	<i class="fa fa-facebook" style="position: absolute;
+	left:35px;"></i>
+	<i class="fa fa-twitter" style="position: absolute;
+	left:70px;"></i>
+	<i class="fa fa-youtube-play" style="position: absolute;
+	left:105px;"></i>
+	<i class="fa fa-pinterest-p" style="position: absolute;
+	left:140px;"></i>
+</div>
+
+<div id="insta">
+	<h3>@ M O N A B L O G</h3>
+	<ul id="galeria">
+            <li><img src="img/slide/ig1.jpg" border="0" width="165" heigh="165" /></li>
+            <li><img src="img/slide/ig2.jpg" border="0" width="165" height="165" /></li>
+            <li><img src="img/slide/ig3.jpg" border="0" width="165" height="165" /></li>
+            <li><img src="img/slide/ig4.jpg" border="0" width="165" height="165" /></li>
+        </ul>
+</div>
+
+<div id="recientes">
+	<h4>POSTS  RECIENTES</h4>
+		<ul>
+            <li><img src="img/recientes/rec1.png" border="0" width="165" height="165" /></li></br>
+            <li class="flecha-l"><img src="img/recientes/flechadoble-down.png" border="0" width="21" height="13" /></li></br>
+            <li><img src="img/recientes/rec2.png" border="0" width="169" height="140" /></li></br>
+            <li class="flecha-l"><img src="img/recientes/flecha-down.png" border="0" width="21" height="13" /></li></br>
+            <li><img src="img/recientes/rec3.png" border="0" width="176" height="164" /></li></br>
+            <li class="flecha-l"><img src="img/recientes/flecha-down.png" border="0" width="21" height="13" /></li></br>
+            <li><img src="img/recientes/rec4.png" border="0" width="175" height="153" /></li></br>
+            <li class="flecha-l"><img src="img/recientes/flecha-down.png" border="0" width="21" height="13" /></li></br>
+            <li><img src="img/recientes/rec5.png" border="0" width="165" height="165" /></li></br>
+            <li class="flecha-l"><img src="img/recientes/flechadoble-down.png" border="0" width="21" height="13" /></li></br>
+            <li><img src="img/verano.png" border="0" width="165" /></li></br>
+        </ul>
+</div>
+
+
+</div>
+
+
+  <!-- Pie de pagina -->
+
+<div id="up"><a href="#"><img src="img/up.png" border="0" width="48" /></a></div>
+<div id="linea-pie"></div>
+<div id="pie">
+
+	<a style="padding-left: 0px;" href="#">LOGIN</a>
+	<a href="#">COPYRIGHT</a>
+	<a href="#">NOSOTROS</a>
+	<a href="#">CONTACTO</a>
+	<a href="#">NEWSLETTER</a>
+	<a style="padding-right: 0px;" href="#">LEGAL</a>
+
+	<div id="rrss-pie">
+		<i class="fa fa-instagram" style="position: absolute;
+		left:0px;"></i>
+		<i class="fa fa-facebook" style="position: absolute;
+		left:35px;"></i>
+		<i class="fa fa-twitter" style="position: absolute;
+		left:70px;"></i>
+		<i class="fa fa-youtube-play" style="position: absolute;
+		left:105px;"></i>
+		<i class="fa fa-pinterest-p" style="position: absolute;
+		left:140px;"></i>
+	</div>
+
+</div>
+
+</body>
+</html>
